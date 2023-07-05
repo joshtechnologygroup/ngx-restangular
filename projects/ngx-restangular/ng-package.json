@@ -3,6 +3,5 @@
   "dest": "../../dist/ngx-restangular",
   "lib": {
     "entryFile": "src/public_api.ts"
-  },
-  "whitelistedNonPeerDependencies": ["@types/lodash"]
+  }
 }
