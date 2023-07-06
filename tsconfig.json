@@ -13,7 +13,12 @@
       "es2015",
       "dom"
     ],
-    "skipLibCheck": true,
+    "paths": {
+      "ngx-restangular": [
+        "projects/ngx-restangular",
+        "dist/ngx-restangular"
+      ]
+    },
     "useDefineForClassFields": false
   }
 }
