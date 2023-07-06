@@ -24,6 +24,10 @@
       "dom"
     ],
     "paths": {
+      "ngx-restangular/*": [
+        "projects/ngx-restangular/*",
+        "dist/ngx-restangular/*"
+      ],
       "ngx-restangular": [
         "projects/ngx-restangular",
         "dist/ngx-restangular"
