@@ -79,7 +79,7 @@
           },
           "configurations": {
             "production": {
-              "project": "projects/ngx-restangular/ng-package.prod.json"
+              "tsConfig": "projects/ngx-restangular/ng-package.prod.json"
             },
             "development": {
               "tsConfig": "projects/quicktest-ui-kit/tsconfig.lib.json"
