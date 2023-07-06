@@ -2,17 +2,10 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2020",
     "module": "es2020",
@@ -35,19 +28,4 @@
     },
     "useDefineForClassFields": false
   },
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictTemplates": true,
-    "strictInputTypes": true,
-    "strictInputAccessModifiers": true,
-    "strictAttributeTypes": true,
-    "strictNullInputTypes": true,
-    "strictSafeNavigationTypes": true,
-    "strictDomLocalRefTypes": true,
-    "strictOutputEventTypes": true,
-    "strictDomEventTypes": true,
-    "strictContextGenerics": true,
-    "strictLiteralTypes": true,
-  }
 }
