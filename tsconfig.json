@@ -1,14 +1,31 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
-    "moduleResolution": "node",
     "baseUrl": "./",
     "sourceMap": true,
-    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "downlevelIteration": true,
     "experimentalDecorators": true,
-    "typeRoots": ["/node_modules/@types"],
-    "lib": ["es2015", "dom"],
-    "skipLibCheck": true
-  }
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "es2020",
+    "typeRoots": [
+      "/node_modules/@types"
+    ],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "paths": {
+      "ngx-restangular/*": [
+        "projects/ngx-restangular/*",
+        "dist/ngx-restangular/*"
+      ],
+      "ngx-restangular": [
+        "projects/ngx-restangular",
+        "dist/ngx-restangular"
+      ]
+    },
+    "useDefineForClassFields": false
+  },
 }
