@@ -4,7 +4,6 @@
   "compilerOptions": {
     "outDir": "../../out-tsc/lib",
     "declaration": true,
-    "moduleResolution": "node",
     "declarationMap": true,
     "inlineSources": true,
     "types": []

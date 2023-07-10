@@ -78,7 +78,7 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-restangular/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-restangular/tsconfig.lib.prod.json"
             },
             "development": {
               "tsConfig": "projects/ngx-restangular/tsconfig.lib.json"
