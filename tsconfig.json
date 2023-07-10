@@ -23,11 +23,11 @@
     "paths": {
       "ngx-restangular/*": [
         "projects/ngx-restangular/*",
-        "dist/ngx-restangular/*"
+        "projects/ngx-restangular/dist/ngx-restangular/*"
       ],
       "ngx-restangular": [
         "projects/ngx-restangular",
-        "dist/ngx-restangular"
+        "projects/ngx-restangular/dist/ngx-restangular"
       ]
     },
     "useDefineForClassFields": false
