@@ -3,6 +3,68 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-restangular-demo": {
+      "root": "demo",
+      "sourceRoot": "demo",
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/demo",
+            "index": "demo/index.html",
+            "main": "demo/main.ts",
+            "tsConfig": "demo/tsconfig.app.json",
+            "polyfills": "demo/polyfills.ts",
+            "assets": [
+              "demo/assets",
+              "demo/favicon.ico"
+            ],
+            "styles": [
+              "demo/styles.css"
+            ],
+            "scripts": [],
+            "aot": false,
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "environments/environment.ts",
+                  "with": "environments/environment.prod.ts"
+                }
+              ]
+            }
+          },
+          "defaultConfiguration": ""
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "ngx-restangular-demo:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ngx-restangular-demo:build:production"
+            }
+          }
+        }
+      }
+    },
     "ngx-restangular": {
       "root": "projects/ngx-restangular",
       "sourceRoot": "projects/ngx-restangular/src",
@@ -12,16 +74,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-restangular/tsconfig.lib.json",
             "project": "projects/ngx-restangular/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/ngx-restangular/ng-package.prod.json",
               "tsConfig": "projects/ngx-restangular/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/quicktest-ui-kit/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-restangular/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
