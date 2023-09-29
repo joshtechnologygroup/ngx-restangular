@@ -74,16 +74,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-restangular/tsconfig.lib.json",
             "project": "projects/ngx-restangular/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/ngx-restangular/ng-package.prod.json",
               "tsConfig": "projects/ngx-restangular/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/quicktest-ui-kit/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-restangular/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
